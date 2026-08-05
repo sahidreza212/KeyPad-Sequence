@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Print_Duplicate {
     public static void printDuplicate(String str){
 
+        str = str.replace(" ","").toLowerCase();
         char[] arr = str.toCharArray();
         Arrays.sort(arr);
         int count = 1;
@@ -25,7 +26,7 @@ public class Print_Duplicate {
     }
     public static void main(String[] args) {
 
-        String str = "Sahid Reza";
+        String str = "Md Sahid Reza";
         printDuplicate(str);
     }
 }
