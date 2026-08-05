@@ -18,10 +18,14 @@ public class Print_Duplicate {
                 count = 1;
             }
         }
+        if(count > 1){
+            System.out.println(arr[arr.length-1]+"-->"+count);
 
+        }
     }
     public static void main(String[] args) {
 
         String str = "Sahid Reza";
+        printDuplicate(str);
     }
 }
