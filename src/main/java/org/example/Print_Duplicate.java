@@ -7,6 +7,12 @@ public class Print_Duplicate {
 
         char[] arr = str.toCharArray();
         Arrays.sort(arr);
+        int count = 1;
+        for(int i = 1;i< arr.length;i++){
+            if(arr[i] == arr[i-1]){
+                count++;
+            }
+        }
     }
     public static void main(String[] args) {
 
